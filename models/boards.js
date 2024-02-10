@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
 
-//Contacts mongoose schema for queries
-const contactSchema = new mongoose.Schema({
+//Contacts mongoose schema for queries//
+const boardSchema = new mongoose.Schema({
     boardName: String,
     boardFinish: String,
     email: String,
@@ -10,4 +10,8 @@ const contactSchema = new mongoose.Schema({
     
 });
 
-module.exports = mongoose.model('Contacts', contactSchema);
+
+
+
+module.exports = mongoose.model('Boards', boardSchema);
+

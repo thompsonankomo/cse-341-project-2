@@ -5,10 +5,10 @@
     "description": "Boards API",
     "version": "1.0.0"
   },
-  "host": "",
+  "host": "localhost:8080",
   "basePath": "/",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
     "/": {
@@ -125,16 +125,16 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "boardName": {
                   "example": "any"
                 },
-                "lastName": {
+                "boardFinish": {
                   "example": "any"
                 },
                 "email": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "boardColor": {
                   "example": "any"
                 },
                 "birthday": {

@@ -9,10 +9,10 @@ const URI = process.env.URI ;
 
 const port = process.env.PORT || 8080;
 
-// Connect to the database server
+// Connect to the database server//
 dbConnect(URI);
 
-// Boody parser, this makes the req body readable
+// Boody parser, this makes the req body readable//
 app.use(bodyParser.json());
 
 app.use((req, res, next) => {

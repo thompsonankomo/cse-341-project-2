@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
-// Connection to database function
+// Connection to database function//
 async function dbConnect(uri) {
     try {
         const conn = await mongoose.connect(uri, {
-            dbName: 'test'
+            dbName: 'Thompson'
         });
         console.log(`MongoDB Connected: ${conn.connection.host}`)
     } catch (error) {

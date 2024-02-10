@@ -1,5 +1,5 @@
 {
-  "name": "conctactsapi",
+  "name": "boardsapi",
   "version": "1.0.0",
   "description": "My project Contacts",
   "main": "app.js",
@@ -19,6 +19,7 @@
     "mongodb": "^6.3.0",
     "mongoose": "^8.1.0",
     "nodemon": "^3.0.3",
+    "passport": "^0.7.0",
     "swagger-ui-express": "^5.0.0"
   },
   "devDependencies": {
