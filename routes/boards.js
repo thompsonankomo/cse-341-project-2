@@ -1,20 +1,22 @@
 const express = require('express');
 const router = require('express').Router();
-const boardsController = require('../controller/boards');
+const BoardsController = require('../controller/boards');
+const {isAuthenticated} = require('../middleware/authenticate');
+
 
 // Get all boards route//
-router.get('/', boardsController.getAll);
+router.get('/', BoardsController.getAllBoards);
 
 // Get single board route
-router.get('/:id', boardsController.getSingle);
+router.get('/:id', BoardsController.getBoard);
 
 // Create new boards route
-router.post('/', boardsController.createBoard);
+router.post('/',isAuthenticated, BoardsController.postBoard);
 
 // Update boards route
-router.put('/:id', boardsController.updateBoard);
+router.put('/:id', isAuthenticated , BoardsControllerr.updateBoard);
 
 // Delete boards route
-router.delete('/:id', boardsController.deleteBoard);
+router.delete('/:id',isAuthenticated, BoardsController.deleteBoard);
 
 module.exports = router;
